@@ -32,7 +32,7 @@ def get_file_info(files_info):
             for filename, size in files_info:
                 if filename == user_input:
                     found = True
-                    timestamp = os.path.getmtime(filename)1
+                    timestamp = os.path.getmtime(filename)
                     dt_object = datetime.fromtimestamp(timestamp)
                     formatted_time = dt_object.strftime('%Y-%m-%d %H:%M:%S')
                     print(f'Файл - {filename} найден, время последнего использования - {formatted_time}')
